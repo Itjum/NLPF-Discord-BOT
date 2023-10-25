@@ -54,10 +54,11 @@
 ### It's all fun and games
 [X] When typing `!xkcd`, your post should post a random comic from https://xkcd.com
 
+### Exercie a moitie fait
 [/] When typing `!poll <question>`, your bot should post a @here mention followed by a Yes/No question. The bost will then write the question again in another message and add one :thumbsup: and one :thumbsdown: emoji reaction to its message
 - Example : `!poll "Should we get burgers ?"`
 - Extra-mile : Define a time-limit for the poll. When the limit has been reached, bot will bot a message with the final result and delete the original poll message
-### Exercie a moitie fait
+
 
 [ ] Create a chat-GPT integration with the command `!prompt <prompt to be processed>`
 
