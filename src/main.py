@@ -13,7 +13,7 @@ bot = commands.Bot(
     intents = intents # Set up basic permissions
 )
 
-bot.author_id = 0000000000  # Change to your discord id
+bot.author_id = 267345775560753162  # Change to your discord id
 
 @bot.event
 async def on_ready():  # When the bot is readyw
@@ -156,5 +156,5 @@ async def poll(ctx, *, question=""):
     await poll_message.add_reaction("👍")
     await poll_message.add_reaction("👎")
 
-token = "Enter token"
+token = "MTE2Njc4NDY4ODUwNjAxOTkwMg.Ghd7ZZ.CrYfAxa1EDaCSEUozyBWC3nzPu8UKCPQ7eIVKM"
 bot.run(token)  # Starts the bot

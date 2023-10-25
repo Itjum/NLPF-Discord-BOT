@@ -49,7 +49,10 @@
 
 [X] The command `!flood` should activate (or deactivate) a moderation workflow. When activated, your bot should monitor the messages and display a warning to any user posting more than X messages in the last Y minutes. The (de)activation should be confirmed using a custom message
 
-
+Commandes:
+    - !flood start
+    - !flood stop
+    - !flood status = !flood
 
 ### It's all fun and games
 [X] When typing `!xkcd`, your post should post a random comic from https://xkcd.com
