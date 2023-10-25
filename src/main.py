@@ -13,10 +13,10 @@ bot = commands.Bot(
     intents = intents # Set up basic permissions
 )
 
-bot.author_id = 267345775560753162  # Change to your discord id
+bot.author_id = 0000000000  # Change to your discord id
 
 @bot.event
-async def on_ready():  # When the bot is ready
+async def on_ready():  # When the bot is readyw
     print("I'm in")
     print(bot.user)  # Prints the bot's username and identifier
 
@@ -38,7 +38,7 @@ async def d6(ctx):
 
 @bot.event
 async def on_message(message):
-    # Si le messag est bon, envoie le message
+    # Si le message est bon, on envoie le message
     if message.content == "Salut tout le monde":
         await message.channel.send(f"Salut tout seul {message.author.mention}")
     await bot.process_commands(message)
@@ -55,7 +55,7 @@ async def admin(ctx, member: discord.Member):
 
 
 catch_phrase_list = [
-    "CIAO BABY",
+    "Hasta la vista, baby.",
     "I AM YOUR FATHER",
     "GOLLUM ! GOLLUM !",
     "VOUS NE PASSEREZ PAAAAAAS"
@@ -73,7 +73,7 @@ async def ban(ctx, member: discord.Member, *, reason=""):
         await ctx.send("Euh c'est toi ?")
         return
 
-    # Si aucune raison n'a ete fournit, on donne une catchphrase
+    # Si aucune raison n'a ete fournit, on donne une catchphrase super stylé
     if not reason or reason == "":
         index = random.randint(0,3)
         reason = catch_phrase_list[index]
@@ -83,7 +83,7 @@ async def ban(ctx, member: discord.Member, *, reason=""):
     await ctx.send(f"{member.mention} has been banned. Reason: {reason}")
 
 # Les variables qui vont servir a definir le nombre de messages
-# limite et l'interval avant la suppression de la restrcition 
+# limite et l'interval avant la suppression de la restrcition
 flood_monitoring_enabled = False
 flood_warning_threshold = 5
 flood_time_interval = 10
